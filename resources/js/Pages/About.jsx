@@ -1,30 +1,13 @@
-import { Link, Head } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
+
+import NavBar from '../Layouts/NavOverlay';
 
 export default function About() {
     return (
         <>
             <Head title="About" />
 
-            <div class="p-4 flex flex-row justify-evenly border-solid border border-black bg-blue-300">
-                <div class="font-bold underline border-solid border border-black">THIS IS ABOUT PAGE</div>
-                {/* <div>
-                    {auth.user ? (
-                            <Link href={route('dashboard')} className='p-2 border-solid border border-black hover:bg-green-300'>
-                                Dashboard
-                            </Link>
-                    ) : (
-                        <>
-                            <Link href={route('register')} className='p-2 border-solid border border-black hover:bg-green-300'>
-                                Create Account
-                            </Link>
-
-                            <Link href={route('login')} className='p-2 border-solid border border-black hover:bg-green-300'>
-                                Login
-                            </Link>
-                        </>
-                    )}
-                </div> */}
-            </div>
+            <NavBar/>
         </>
     )
 }

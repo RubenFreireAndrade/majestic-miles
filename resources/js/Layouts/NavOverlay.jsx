@@ -1,4 +1,4 @@
-import { Link} from '@inertiajs/react';
+import { Link } from '@inertiajs/react';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 
