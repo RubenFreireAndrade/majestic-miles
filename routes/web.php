@@ -41,6 +41,14 @@ Route::get('/contact', function () {
     return Inertia::render('Contact');
 })->name('contact');
 
+Route::get('/transfers', function () {
+    return Inertia::render('Transfers');
+})->name('transfers');
+
+Route::get('/hire', function () {
+    return Inertia::render('Hire');
+})->name('hire');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -50,8 +58,8 @@ Route::middleware('auth')->group(function () {
 
 
 // For testing purposes
-// Route::get('/test', function () {
-//     return Inertia::render('Test');
-// })->name('test');
+Route::get('/test', function () {
+    return Inertia::render('Test');
+})->name('test');
 
 require __DIR__.'/auth.php';
