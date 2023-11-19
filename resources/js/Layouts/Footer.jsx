@@ -18,8 +18,8 @@ export default function Footer() {
                     >
                         Social Media 2
                     </Link>
-                    <Link 
-                        //to="/social-media-3" 
+                    <Link
+                        //to="/social-media-3"
                         className="hover:text-gray-500"
                     >
                         Social Media 3
