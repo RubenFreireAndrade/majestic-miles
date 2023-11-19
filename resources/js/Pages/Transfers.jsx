@@ -1,17 +1,15 @@
-import { Head } from '@inertiajs/react';
+import { Head } from "@inertiajs/react";
 
-import NavBar from '../Layouts/NavBar';
+import NavBar from "../Layouts/NavBar";
 
 export default function Transfers() {
     return (
         <>
             <Head title="Transfers" />
 
-            <NavBar/>
+            <NavBar />
 
-            <div class='flex flex-col items-center'>
-                
-            </div>
+            <div class="flex flex-col items-center"></div>
         </>
-    )
+    );
 }

@@ -1,26 +1,52 @@
-import { Link } from '@inertiajs/react';
-import { BsFillTelephoneFill } from 'react-icons/bs';
-import { AiOutlineMail } from 'react-icons/ai';
+import { Link } from "@inertiajs/react";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 
 export default function NavBar({ auth }) {
     return (
         <>
-            <div class='p-4 flex flex-row justify-evenly items-center border border-solid border-black bg-blue-300'>
-                <Link href={route('/')} class='m-1 font-bold underline'>Majestic Miles</Link>
+            <div class="fixed top-0 left-0 right-0 p-4 flex flex-row justify-evenly items-center border border-solid border-black bg-blue-300">
+                <Link href={route("/")} class="m-1 font-bold underline">
+                    Majestic Miles
+                </Link>
 
-                <div class='flex flex-col border border-solid border-black'>
+                <div class="flex flex-col border border-solid border-black">
                     <div class="flex flex-row">
-                        <AiOutlineMail/> <span> <a href="mailto:info.majesticmiles@gmail.com" class='mx-2 hover:bg-green-300'>info.majesticmiles@gmail.com</a> </span>
-
-                        <BsFillTelephoneFill/> <span class='mx-2 hover:bg-green-300'>90123908981</span>
+                        <AiOutlineMail />{" "}
+                        <span>
+                            {" "}
+                            <a
+                                href="mailto:info.majesticmiles@gmail.com"
+                                class="mx-2 hover:bg-green-300"
+                            >
+                                info.majesticmiles@gmail.com
+                            </a>{" "}
+                        </span>
+                        <BsFillTelephoneFill />{" "}
+                        <span class="mx-2 hover:bg-green-300">90123908981</span>
                     </div>
-                    <div class='flex flex-row justify-evenly'>
+                    <div class="flex flex-row justify-evenly">
                         <>
-                            <Link href={route('services')} class='mx-1 hover:bg-green-300'>Services</Link>
+                            <Link
+                                href={route("services")}
+                                class="mx-1 hover:bg-green-300"
+                            >
+                                Services
+                            </Link>
 
-                            <Link href={route('about')} class='mx-1 hover:bg-green-300'>About</Link>
+                            <Link
+                                href={route("about")}
+                                class="mx-1 hover:bg-green-300"
+                            >
+                                About
+                            </Link>
 
-                            <Link href={route('contact')} class='mx-1 hover:bg-green-300'>Contact</Link>
+                            <Link
+                                href={route("contact")}
+                                class="mx-1 hover:bg-green-300"
+                            >
+                                Contact
+                            </Link>
                         </>
                     </div>
                 </div>
@@ -43,8 +69,7 @@ export default function NavBar({ auth }) {
                         </>
                     )}
                 </div> */}
-                
             </div>
         </>
-    )
+    );
 }
