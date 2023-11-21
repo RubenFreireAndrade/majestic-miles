@@ -1,8 +1,7 @@
 .transition-transform {
     transition-property: transform;
-  }
-  
-  .ease-in-out {
+}
+
+.ease-in-out {
     transition-timing-function: ease-in-out;
-  }
-  
+}

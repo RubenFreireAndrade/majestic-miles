@@ -6,7 +6,7 @@ export default function Carousel({ images, interval }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
-            const intervalId = setInterval(() => {
+        const intervalId = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
         }, interval);
 
@@ -20,8 +20,8 @@ export default function Carousel({ images, interval }) {
                 style={{ transform: `translateX(-${currentIndex * (100 / images.length)}%)` }}
             >
                 {images.map((image, index) => (
-                    <img 
-                        key={index} 
+                    <img
+                        key={index}
                         src={image}
                         alt={`slide-${index}`}
                         class="w-full h-full object-cover"
@@ -29,6 +29,6 @@ export default function Carousel({ images, interval }) {
                     />
                 ))}
             </div>
-    </div>
+        </div>
     );
 }

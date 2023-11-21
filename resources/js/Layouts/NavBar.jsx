@@ -5,14 +5,14 @@ import { AiOutlineMail } from 'react-icons/ai';
 export default function NavBar({ auth }) {
     return (
         <>
-            <div class="sticky top-0 p-4 flex flex-row justify-evenly items-center bg-blue-400">
+            <div class="sticky top-0 p-4 flex flex-row justify-evenly items-center bg-blue-400 text-white">
                 <Link href={route('/')} class="m-1 font-bold underline">
                     Majestic Miles
                 </Link>
 
-                <div class="flex flex-col border border-solid border-black">
+                <div class="flex flex-col">
                     <div class="flex flex-row">
-                        <AiOutlineMail />
+                        <AiOutlineMail class="ml-4" />
                         <span>
                             <a
                                 href="mailto:info.majesticmiles@gmail.com"
@@ -21,7 +21,7 @@ export default function NavBar({ auth }) {
                                 info.majesticmiles@gmail.com
                             </a>
                         </span>
-                        <BsFillTelephoneFill />
+                        <BsFillTelephoneFill class="ml-4" />
                         <span class="mx-2 hover:bg-green-300">90123908981</span>
                     </div>
                     <div class="flex flex-row justify-evenly">
