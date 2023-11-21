@@ -9,7 +9,7 @@ export default function Services() {
 
             <NavBar />
 
-            <div class="flex flex-col items-center justify-evenly border border-solid border-black">
+            <div class="flex flex-col items-center justify-evenly mt-20 border border-solid border-black">
                 <div class="flex flex-row">
                     <h1>SERVICES</h1>
                 </div>
