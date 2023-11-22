@@ -6,11 +6,11 @@ export default function NavBar({ auth }) {
     return (
         <>
             <div class="sticky top-0 p-4 flex flex-row justify-evenly items-center bg-blue-400 text-white">
-                <Link href={route('/')} class="m-1 font-bold underline">
+                <Link href={route('/')} class="m-1 font-bold underline text-[2rem]">
                     Majestic Miles
                 </Link>
 
-                <div class="flex flex-col">
+                <div class="flex flex-col font-bold text-[1rem]">
                     <div class="flex flex-row">
                         <AiOutlineMail class="ml-4" />
                         <span>
@@ -24,7 +24,7 @@ export default function NavBar({ auth }) {
                         <BsFillTelephoneFill class="ml-4" />
                         <span class="mx-2 hover:bg-green-300">90123908981</span>
                     </div>
-                    <div class="flex flex-row justify-evenly">
+                    <div class="flex flex-row justify-evenly font-bold text-[1.50rem]">
                         <>
                             <Link href={route('services')} class="mx-1 hover:bg-green-300">
                                 Services

@@ -3,13 +3,15 @@ import { IoCarSportSharp } from 'react-icons/io5';
 
 import NavBar from '../Layouts/NavBar';
 import Footer from '../Layouts/Footer';
+import Carousel from '../Layouts/Carousel';
 
 import frontMerc from '../../assets/FrontMerc.jpg';
 import sideFrontMerc from '../../assets/sideFrontMerc.jpg';
 import frontMercBlack from '../../assets/FrontMercBlack.jpg';
+import frontMercBlackTrans from '../../assets/MercBlackCar2.png';
 
 export default function Home() {
-    const images = [frontMercBlack, frontMerc, sideFrontMerc];
+    const images = [frontMercBlackTrans, frontMercBlack];
 
     return (
         <>
@@ -17,15 +19,15 @@ export default function Home() {
 
             <NavBar />
 
-            <div class="flex flex-col items-center bg-gray-700">
-                <div>
-                    <img src={frontMercBlack}></img>
-                </div>
-            </div>
+            <Carousel images={images} />
 
-            <div class="text-center font-bold border border-black p-4 bg-blue-400 text-white text-outline">
+            <section class="text-center font-bold text-[2rem]">
+                BOOK NOW SECTION WITH TEXT FIELD? THIS SECTION COULD HAVE A QUICK SUMMARY OF WHAT MM IS SELLING
+            </section>
+
+            <section class="text-center font-bold text-[2rem] border border-black p-4 bg-blue-400 text-white">
                 Our Services
-            </div>
+            </section>
 
             <section class="grid grid-cols-2 gap-10 mx-12 mb-12 items-center">
                 <div class="flex flex-row">
